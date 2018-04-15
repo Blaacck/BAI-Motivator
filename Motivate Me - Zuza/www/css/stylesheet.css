@@ -99,3 +99,9 @@ input {
 	font-weight: bold;
 	margin-bottom: 0;
 }
+
+#recommend {
+	font-size: 3.5vw;
+	padding: 10px;
+	text-align: center;
+}

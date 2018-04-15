@@ -23,4 +23,4 @@ https://www.dropbox.com/s/cukv7f1nydka7ci/Czas%20pracy.xlsx?dl=0
 
 https://github.com/matusiakk/BAI-Motivator/blob/master/BAI%20projekt%20-%20prototyp.mp
 
-<img src="https://github.com/matusiakk/BAI-Motivator/blob/master/Prototyp.PNG">
+<img src="Prototyp.PNG">

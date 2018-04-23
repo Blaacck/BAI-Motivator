@@ -12,27 +12,40 @@
 	<script src="cordova.js"></script>
   </head>
   
-  <body class="first-pages" onload="init()">
+  <body class="next-pages" onload="init()">
     <div id="container-header">
-	<div class="page-header1">
+	<div class="page-header2">
+	<a href="main-page.html">
 	<img src="img/logo.png" alt="logo"/>
 	</div>
 	</div>
 	<div id="container-content">
-	<p class="welcome"></br>Witaj! Zaloguj się do aplikacji, by móc zobaczyć swoje cele i motywacje!</p>
 	
-	<div class="login">
-	<form action="url" method="POST">
-	<input type="text" name="email" placeholder="email@example.com"/><br/>
-	<input type="password" name="password" placeholder="password"/><br/><br/>
-	<button type="button"><a href="main-page.html">Zaloguj się</a></button> 
-	<button id="facebook" type="button" class="btn btn-fb"><i class="fa fa-facebook pr-1"></i><a href="main-page.html"> Zaloguj przez Facebooka</a></button>
-	<button id="google" type="button" class="btn btn-block btn-social btn-google"><i class="fa fa-google"></i><a href="main-page.html"> Zaloguj przez Gmail</a></button>
-	</form>
-	<p class="new-account">Nie masz jeszcze konta?</p>
-	<button type="button"><a href="new-account.html">Stwórz nowe konto</a></button> 
+<nav>
+	<ul>
+    <li class="nav-item">
+      <a class="nav-link" href="new-target.html">Zdefiniuj nowy cel</a>
+    </li>
+    <li>
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Inspiracja na dziś</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="inspiration.html">Motywacja</a>
+        <a class="dropdown-item" href="inspiration.html">Fitness</a>
+        <a class="dropdown-item" href="inspiration.html">Zdrowe odżywianie</a>
+		<a class="dropdown-item" href="inspiration.html">Podróże</a>
+      </div>
+    </li>
+	
+	<li class="nav-item">
+      <a class="nav-link" href="info.html">Informacje o aplikacji</a>
+    </li>
+  </ul>
+</nav>
 	</div>
-	
+	<div class="login">
+	<p class="welcome"></br>Witaj w aplikacji Motivate Me!</p>
+	<p class="small-text">Nie masz jeszcze zdefiniowanego celu.</p>
+	<button type="button"><a href="new-target.html">Zdefiniuj swój pierwszy cel</a></button> 
 	</div>
 	<div id="container-footer">
 	<div class="footer">

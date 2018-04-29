@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!---Zakładanie konta i logowanie użytkownika: test-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="js/firebaseInitialize.js"></script>
+    <title>Zakładanie konta i logowanie</title>
+</head>
+
+<body>
+    <h1>Logowanie użytkownik</h1>
+
+    <input id="emailField" type=text placeholder="Type your email" />
+    <br/>
+    <input id="pswdField" type=password />
+    <br/>
+    <button id="signin"> Zaloguj się</button>
+    <button id="googleSignin">Google</button>
+    <button id="fbSignin">Facebook</button>
+    <br/>
+    <br/>
+    <button id="button"> Stwórz nowe konto</button>
+
+    <script src="js/userCheck.js"></script>
+    <script src="js/accountCreation.js"></script>
+    <script src="js/signin.js"></script>
+    <script src="js/googleSignin.js"></script>
+    <script src="js/fbSignin.js"></script>
+
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>

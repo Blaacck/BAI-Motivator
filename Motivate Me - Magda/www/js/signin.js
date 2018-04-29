@@ -13,8 +13,8 @@ $('#signin').click(
       firebase.auth().signInWithEmailAndPassword(email, password).then(function(user) {
         alert("Zalogowano");
       }).catch(function(error) {
-        var errorCode = error.code;
-        var errorMessage = error.message;
+        let errorCode = error.code;
+        let errorMessage = error.message;
 
         alert(errorMessage);
       });

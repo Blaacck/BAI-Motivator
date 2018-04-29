@@ -9,11 +9,13 @@ $('#button').click(
         var regex = RegExp("[0-9]");
         
         if (email == "" ){
-            alert("Uzupełnij pola");
+
+            alert("Email field cannot be blank");
         }
         
-        if(password.length<7 || !regex.test(password)){
-            alert("Hasło musi zawierać conajmniej 8 znaków, w tym 1 cyfrę");
+        if(password.length<8 || !regex.test(password)){
+            alert("The password must have at least 8 characters and at least 1 digit");
+
         } else {
             firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error){
                 var errorCode = error.code;
@@ -21,7 +23,9 @@ $('#button').click(
                 console.log(errorMessage)
                 
                 if(errorCode == "auth/weak-password"){
-                    alert("Twoje hasło jest za słabe");
+
+                    alert("Your password is too weak");
+
                 }
             });
             
@@ -29,7 +33,8 @@ $('#button').click(
                 $("#emailField").val("");
                 $("#pswdField").val("");
                 
-            alert("Konto zostało utworzone!");
+
+            alert("Account created successully!");
         });
         };
     });

@@ -1,6 +1,4 @@
-// logowanie przy użyciu konta Google
-
-$('#googleSignin').click(
+$('#google').click(
         
 function() {
       if (!firebase.auth().currentUser) {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-		id          = "com.phonegap.bai"
+		id          = "com.motivateme.android"
         version     = "1.0.0" 
-        android-packageName="the.motivate.me"
+        android-packageName="com.motivateme.android"
         android-activityName="MotivateMe"
         android-versionCode="4"
         ios-CFBundleIdentifier="my.legacy.ios.id"
@@ -14,10 +14,14 @@
     <description>Motivate Me</description>
     <author href="" email="">
 	</author>
-	<platform name="android" />
+	<preference name="phonegap-version" value="cli-7.0.1" />
+<platform name="android">
+    <resource-file src="google-services.json" target="/google-services.json" />
+</platform>
+<plugin name="phonegap-plugin-push" spec="^2.0.0" />
 	<plugin name="cordova-plugin-device" spec="2.0.1" />
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
-    <!--<plugin name="cordova-plugin-fcm" spec="2.1.2" />-->
+    <plugin name="cordova-plugin-fcm" spec="2.1.2" />
     
    
 </widget>

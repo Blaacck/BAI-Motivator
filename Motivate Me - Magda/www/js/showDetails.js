@@ -4,6 +4,10 @@ document.getElementById("tar-details").onload = function() {showList()};
 
 function showList() {
 	
+	firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+	
 	let tarList = document.getElementById("select-target");
 	let user = firebase.auth().currentUser.uid;
 	//let user = "GSrjFTKIaHdr9zgpYLx5p3z9YUL2"
@@ -17,6 +21,12 @@ dbRefList.on('child_added', snap =>  {
 	para.value = snap.key;
 	tarList.appendChild(para);
 })
+  } else {
+    // No user is signed in.
+  }
+});
+	
+	
 }
 
 $('#show').click(

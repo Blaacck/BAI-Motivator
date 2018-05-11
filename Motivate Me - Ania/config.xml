@@ -12,16 +12,14 @@
 
     <name>Motivate Me</name>
     <description>Motivate Me</description>
-    <author href="" email="">
-	</author>
+    <author email="motivateme.bai@gmail.com">
+        K. Matusiak, A. Munk, M. Górka, Z. Gil
+    </author>
 	<preference name="phonegap-version" value="cli-7.0.1" />
-<platform name="android">
-    <resource-file src="google-services.json" target="/google-services.json" />
-</platform>
-<plugin name="phonegap-plugin-push" spec="^2.0.0" />
+    <platform name="android">
+        <resource-file src="google-services.json" target="/google-services.json" />
+    </platform>
 	<plugin name="cordova-plugin-device" spec="2.0.1" />
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
     <plugin name="cordova-plugin-fcm" spec="2.1.2" />
-    
-   
 </widget>

@@ -1,10 +1,9 @@
-//Sprawdzenie statusu użytkownika
 firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
 
     let user = firebase.auth().currentUser;
-    window.location.replace("./mainpanel.html");
+    window.location.replace("./main-page.html");
   } else {
-    //użytkownik nie jest zalogowany/zarejestrowany
+    window.location.replace("./index.html");
   }
 });

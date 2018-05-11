@@ -1,0 +1,7 @@
+{
+    "short_name": "Motivate Me",
+    "name": "Motivate Me",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#c498cd"
+}

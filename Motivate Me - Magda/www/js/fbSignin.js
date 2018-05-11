@@ -1,6 +1,4 @@
-// logowanie przy użyciu konta na facebook'u
-
-$('#fbSignin').click(
+$('#facebook').click(
     
     function() {
       if (!firebase.auth().currentUser) {

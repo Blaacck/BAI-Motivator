@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+		id          = "motivateme"
+        version     = "1.0.0" >
+
+    <name>Motivate Me</name>
+    <description>Motivate Me</description>
+    <author email="motivateme.bai@gmail.com">
+		K. Matusiak, A. Munk, M. Górka, Z. Gil
+	</author>
+	<platform name="android" />
+	
+	<plugin name="cordova-plugin-device" spec="2.0.1" />
+	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
+
+</widget>

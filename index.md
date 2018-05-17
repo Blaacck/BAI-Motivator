@@ -14,13 +14,13 @@ Użytkownik po zalogowaniu ma możliwość zdefiniowania celów i terminów real
 - Katarzyna Matusiak
 
 ### System zarządzania projektem:
-https://trello.com/b/tjuWn60W/projekt-bai
+<a href="https://trello.com/b/tjuWn60W/projekt-bai">https://trello.com/b/tjuWn60W/projekt-bai</a>
 
 ### Czas pracy:
-https://www.dropbox.com/s/cukv7f1nydka7ci/Czas%20pracy.xlsx?dl=0
+<a href="https://www.dropbox.com/s/cukv7f1nydka7ci/Czas%20pracy.xlsx?dl=0">https://www.dropbox.com/s/cukv7f1nydka7ci/Czas%20pracy.xlsx?dl=0</a>
 
 ### Prototyp:
 
-https://github.com/matusiakk/BAI-Motivator/blob/master/BAI%20projekt%20-%20prototyp.mp
+<a href="https://github.com/matusiakk/BAI-Motivator/blob/master/BAI%20projekt%20-%20prototyp.mp">https://github.com/matusiakk/BAI-Motivator/blob/master/BAI%20projekt%20-%20prototyp.mp</a>
 
 <img src="Prototyp.PNG"/>

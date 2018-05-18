@@ -351,13 +351,11 @@ button a, a:active, a:hover {
 
 #modify-target {
 	position: absolute;
-	bottom: 10vh;
 	right: 20vw;
 }
 
 #define-new {
 	position: absolute;
-	bottom: 4vh;
 	right: 20vw;
 }
 

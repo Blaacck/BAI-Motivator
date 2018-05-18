@@ -3,24 +3,18 @@
 $('#save').click(
 
 function saveGoal(){
+	
+var user = firebase.auth().currentUser.uid;
+var targetName = $('#target-name').val();
+var targetDescription = $('#target-description').val();
 
-//let user = "GSrjFTKIaHdr9zgpYLx5p3z9YUL2";	
-let user = firebase.auth().currentUser.uid;
-let targetName = $('#target-name').val();
-let targetDescription = $('#target-description').val();
 
-function zero(liczba) {
-    return liczba=(liczba < 10)? "0"+liczba : liczba;
-}
-let today = new Date();
-let start = today.getFullYear()+'-'+(zero(today.getMonth()+1))+'-'+zero(today.getDate());
+var end = $('#date').val();
+var agree =  $('#check').is(':checked');
+var progress = 0;
 
-let end = $('#date').val();
-let agree =  $('#check').is(':checked');
-let progress = 0;
-
-let name = "user-" + user+"/"+targetName;
-let dbRef = firebase.database().ref().child(name);
+var name = "user-" + user+"/"+targetName;
+var dbRef = firebase.database().ref().child(name);
 
 
 	if (targetName == ""){
@@ -36,21 +30,17 @@ let dbRef = firebase.database().ref().child(name);
 	}
 	
 	else {
- 	dbRef.set({
-		user: user,
+	dbRef.set({
 		targetName: targetName,
 		targeDescription : targetDescription,
-		startDate : start,
 		endDate : end,
 		agree : agree,
 		progress : progress
 	})
-	console.log(name +"\n"+user+"\n"+targetName+"\n"+targetDescription+"\n"+start+"\n"+end+"\n"+agree+"\n"+progress);
+	console.log(name +"\n"+user+"\n"+targetName+"\n"+targetDescription+"\n"+end+"\n"+agree+"\n"+progress);
+	alert("Zapisano cel o nazwie: "+ targetName +".")
 	
-	if (confirm("Zapisano cel o nazwie: "+ targetName +".")) {
-		window.location.replace("./list-of-targets.html");
-    } else {      
-    }
+		setTimeout(function(){ window.location.replace("./list-of-targets.html"); }, 3000);
 	
 	}
-	})
+})

@@ -1,0 +1,10 @@
+.calendar{ border: 1px solid black; display: block; text-align: center; margin: 5px auto; width: 60vw; }
+.calendar-body { margin: 0 auto; padding-top: 10px; border-top: 2px solid black; }
+.calendar-day-th, td{ margin: 0px; padding: 2px; text-align: center; }
+.calendar-day-th {font-size:1.1em;}
+.calendar-head{ display: inline-block; margin:0 auto; padding: 5%; }
+#calendar-month-th{ display:inline-block; }
+.calendar-head > *{ font-size: 1.1em; }
+.calenday-day{ border-radius: 50%; font-size:0.8em; width:24px; height:24px; }
+.active{ background-color: #E0EFE0;  }
+#calendar-month-prev, #calendar-month-next { width: 15px; }

@@ -14,14 +14,16 @@
     <script src ="js/firebaseInitialize.js"></script>
 	<script src = "js/jquery-3.3.1.min.js"></script>
 	<script src = "js/jquery.mobile-1.4.5.min.js"></script>
+	<link href="css/calendar.css" rel="stylesheet" type="text/css"/>
+	<script src="js/calendar.js"></script>
   </head>
   
-  <body class="next-pages" onload="init()" id="tar-list">
-    <div id="container-header">
-	<div class="page-header2">
-	<a href="main-page.html">
-	<img src="img/logo.png" alt="logo"/>
-	</div>
+  	<body class="next-pages" onload="init()" id="tar-list">
+    	<div id="container-header">
+		<div class="page-header2">
+		<a href="main-page.html">
+		<img src="img/logo.png" alt="logo"/>
+		</div>
 	</div>
 	<div id="container-content">
 	
@@ -44,6 +46,82 @@
     </li>
   </ul>
 </nav>
+		<div class="calendar">
+			<div class="calendar-head">
+				<span><img id="calendar-month-prev" src="img/left-arrow.png" onclick="prevMonth()"/></span><!--<span id="calendar-month-prev"></span>-->
+				<span id="calendar-month-th">May</span>
+				<span><img id="calendar-month-next" src="img/right-arrow.png" onclick="nextMonth()"/></span><!--<span id="calendar-month-next"></span>-->
+			</div>
+			<table class="calendar-body">
+				<thead >
+					<tr>
+						<th class="calendar-day-th">Mo</th>
+						<th class="calendar-day-th">Tu</th>
+						<th class="calendar-day-th">We</th>
+						<th class="calendar-day-th">Th</th>
+						<th class="calendar-day-th">Fr</th>
+						<th class="calendar-day-th">Sa</th>
+						<th class="calendar-day-th">Su</th>
+					</tr>
+				</thead>
+				<tbody class="calendar-days">
+					<tr id="week-1">
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+					</tr>
+					<tr id="week-2">
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+					</tr>
+					<tr id="week-3">
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+					</tr>
+					<tr id="week-4">
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+					</tr>
+					<tr id="week-5">
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+					</tr>
+					<tr id="week-6">
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+						<td class="calendar-day"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 <div class="target-section-main">
 <div class="target-details" id="tar-details">
 </div>

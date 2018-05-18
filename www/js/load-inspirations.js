@@ -1,6 +1,6 @@
 var picturesArr = [];
 var index = 0;
-var requestUrl = "https://munk.pl/"
+var requestUrl = "http://munk.pl/"
 
 $(document).ready(function(){
 

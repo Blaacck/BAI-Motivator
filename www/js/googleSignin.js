@@ -9,7 +9,7 @@ $('#google').click(
                 },
                 function (obj) {
                     if (!firebase.auth().currentUser) {
-                        firebase.auth().signInWithCredential(firebase.auth.GoogleAuthProvider.credential(obj.idToken)).then(function (succes) {
+                        firebase.auth().signInWithCredential(firebase.auth.GoogleAuthProvider.credential(obj.idToken)).then(function(success){
 
                         }).catch(function (error) {
 
